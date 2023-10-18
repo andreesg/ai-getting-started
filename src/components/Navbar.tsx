@@ -5,7 +5,7 @@ import Link from "next/link";
 const navigation = [
   {
     name: "About",
-    href: "https://github.com/a16z-infra/ai-getting-started",
+    href: "https://xgeeks.io/",
     current: false,
   },
 ];
@@ -27,7 +27,7 @@ export default function Navbar() {
                 height={0}
                 sizes="100vw"
                 className="block h-8 w-auto lg:hidden rounded-lg"
-                src="https://avatars.githubusercontent.com/u/745163?s=200&v=4"
+                src="https://blog.xgeeks.tech/content/images/size/w256h256/2023/03/xgeeks-svg.png"
                 alt="a16z"
               />
               <Image
@@ -35,7 +35,7 @@ export default function Navbar() {
                 height={0}
                 sizes="100vw"
                 className="hidden h-8 w-auto lg:block rounded-lg"
-                src="https://avatars.githubusercontent.com/u/745163?s=200&v=4"
+                src="https://blog.xgeeks.tech/content/images/size/w256h256/2023/03/xgeeks-svg.png"
                 alt="a16z"
               />
             </div>
@@ -56,16 +56,6 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-                <div className="px-3 py-2 text-gray-300">
-                  <iframe
-                    src="https://ghbtns.com/github-btn.html?user=a16z-infra&repo=ai-getting-started&type=star&count=true"
-                    frameBorder="0"
-                    scrolling="0"
-                    width="150"
-                    height="20"
-                    title="GitHub"
-                  ></iframe>
-                </div>
               </div>
             </div>
           </div>

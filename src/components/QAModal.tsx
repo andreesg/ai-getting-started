@@ -44,7 +44,7 @@ export default function QAModal({
                 <div>
                   <form onSubmit={handleSubmit}>
                     <input
-                      placeholder="Will AI Take All Our Jobs?"
+                      placeholder="What are the main challenges of observability?"
                       className="w-full flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm focus:outline-none  sm:text-sm sm:leading-6"
                       value={input}
                       onChange={handleInputChange}
@@ -55,10 +55,10 @@ export default function QAModal({
                       <p className="text-sm text-gray-500">
                         Ask questions about{" "}
                         <a
-                          href="https://a16z.com/2023/06/06/ai-will-save-the-world/"
+                          href="https://blog.xgeeks.tech/challenges-and-solutions-of-observability-in-cloud-native-applications/"
                           className="underline"
                         >
-                          Why AI Will Save the World
+                          Observability in Cloud Native
                         </a>
                       </p>
                     </div>

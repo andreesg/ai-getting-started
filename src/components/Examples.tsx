@@ -5,16 +5,10 @@ import TextToImgModal from "./TextToImgModal";
 import Image from "next/image";
 const examples = [
   {
-    name: "Text to image",
-    title: "Powered by stable-diffusion on Replicate",
-    imageUrl:
-      "https://tjzk.replicate.delivery/models_models_featured_image/710f5e9f-9561-4e4f-9d1e-614205f62597/stable-diffusion.webp",
-  },
-  {
     name: "Q&A on documents",
-    title: "Ask questions about an a16z blog",
+    title: "Ask questions about xgeeks blog",
     imageUrl:
-      "https://a16z.com/wp-content/uploads/2021/02/Default-Website-FeatureImage.jpg"
+      "https://blog.xgeeks.tech/assets/xgeeks_logo.svg"
   },
 ];
 
@@ -36,7 +30,7 @@ export default function Examples() {
           <li
             key={example.name}
             onClick={() =>
-              i === 0 ? setTextToImageModalOpen(true) : setQAModalOpen(true)
+              i === 0 ? setQAModalOpen(true) : setTextToImageModalOpen(true)
             }
             className="col-span-1 flex flex-col rounded-lg bg-slate-800  text-center shadow relative ring-1 ring-white/10 cursor-pointer hover:ring-sky-300/70 transition"
           >
@@ -46,7 +40,7 @@ export default function Examples() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="flex-shrink-0 object-cover w-32 h-32 mx-auto rounded-full"
+                className="flex-shrink-0 object-contain w-32 h-32 mx-auto rounded-full"
                 src={example.imageUrl}
                 alt=""
               />
